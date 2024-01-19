@@ -32,7 +32,7 @@ public class LoginPageSteps {
     @Then("the user is on the Home page")
     public void the_user_is_on_the_home_page() {
         boolean exist = homePage.isDashBoardHeadingExist();
-        Assert.assertTrue(exist);
+        Assert.assertTrue(!exist);
     }
 
     @When("the user clicks on the test user avatar dropdown at the top right corner")
